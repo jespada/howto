@@ -1,0 +1,32 @@
+UPGRADING DEBIAN
+
+1- UPDATE
+	# apt-get update
+2- UPGRADE
+	# apt-get upgrade (Install The Latest Etch Updates Before upgrading to Lenny, install the latest updates for Etch)
+3- Update/Edit the /etc/apt/preference and /etc/apt/source.list 
+	
+	# vi /etc/apt/preference  (and change for example etch for lenny)
+	# vi /etc/apt/source.list ( :g/etch/s//lenny/g )
+4- Update to the new source
+	# apt-get update
+5- Next update to the the Lenny versions of the package managers dpkg, aptitude, and apt
+	
+	# apt-get install dpkg aptitude apt
+ 
+6- Then do a minimal system upgrade (because a full upgrade might cause some conflicts at this stage)
+	# aptitude safe-upgrade
+7- Now start the full distribution upgrade
+	# aptitude full-upgrade
+8- Reboot
+9- Run apt-get update and make sure to install packages like
+debian-multimedia-keyring and debian-backports-keyring (after which run
+apt-get update again).
+
+Then update packages, then remove obsolete/deprecated packages.
+Replace syslog-ng with rsyslog and replace java5 with java6.
+
+
+
+
+
