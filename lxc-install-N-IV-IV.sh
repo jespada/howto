@@ -50,7 +50,7 @@ lxc-debian -p /srv/lxc/$NAME
 
 echo $NAME > /srv/lxc/$NAME/rootfs/etc/hostname
 echo "127.0.0.1 localhost
-`ipcalc $IP1|awk '/^Address:/ {print $2}'` $NAME.nimbuzz.com $NAME
+`ipcalc $IP1|awk '/^Address:/ {print $2}'` $NAME.mydomain.com $NAME
 
 # The following lines are desirable for IPv6 capable hosts
 ::1 localhost ip6-localhost ip6-loopback
@@ -123,7 +123,7 @@ chroot /srv/lxc/$NAME/rootfs apt-get update
 #Enable access to container
 
 chroot /srv/lxc/$NAME/rootfs apt-get install ca-certificates
-cp /usr/local/share/ca-certificates/nimbuzz.crt \
+cp /usr/local/share/ca-certificates/mydomain.crt \
  /srv/lxc/$NAME/rootfs/usr/local/share/ca-certificates/
 chroot /srv/lxc/$NAME/rootfs update-ca-certificates
 chroot /srv/lxc/$NAME/rootfs apt-get install ldap-utils sudo-ldap \
