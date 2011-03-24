@@ -1,0 +1,32 @@
+# 
+
+# deb cdrom:[Debian GNU/Linux testing _Squeeze_ - Official Snapshot amd64 CD Binary-1 20110112-16:25]/ squeeze main
+
+#deb cdrom:[Debian GNU/Linux testing _Squeeze_ - Official Snapshot amd64 CD Binary-1 20110112-16:25]/ squeeze main
+
+#deb http://security.debian.org/ squeeze/updates main
+#deb-src http://security.debian.org/ squeeze/updates main
+
+deb http://ftp.de.debian.org/debian/ testing main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ testing main contrib non-free
+
+deb http://security.debian.org/ testing/updates main contrib non-free
+deb-src http://security.debian.org/ testing/updates main contrib non-free
+
+deb http://www.debian-multimedia.org testing main non-free
+
+
+#deb http://www.backports.org/debian lenny-backports main contrib non-free
+
+#Experimental
+#deb ftp://mirrors.kernel.org/debian/ experimental main contrib non-free
+#deb-src ftp://mirrors.kernel.org/debian/ experimental main contrib non-free
+
+#Virtual Box
+deb http://download.virtualbox.org/virtualbox/debian squeeze contrib
+
+#Opera
+deb http://deb.opera.com/opera testing non-free
+#Google software repository (http://www.google.com/linuxrepositories/apt.html)
+deb http://dl.google.com/linux/deb/ stable non-free main
+
