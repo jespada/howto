@@ -1,5 +1,5 @@
 #!/bin/bash
-
+####Usage: lxc-install-N-IV-IV.sh  <CONATINER-NAME> <IP1/VLAN2> <IP2/VLAN2>
 set -u
 
 #Install nesesary packages
