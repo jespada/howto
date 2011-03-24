@@ -148,7 +148,7 @@ chroot /srv/lxc/$NAME/rootfs passwd -l root
 #Enable buzz
 chroot /srv/lxc/$NAME/rootfs addgroup --system buzz
 chroot /srv/lxc/$NAME/rootfs adduser --system --home /home/buzz --shell /bin/bash \
- --gecos "Nimbuzz System Administrator" --ingroup buzz buzz
+ --gecos "System Administrator" --ingroup buzz buzz
 chroot /srv/lxc/$NAME/rootfs  passwd buzz # FIXME - this is interactive
 
 #Create container
