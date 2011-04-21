@@ -15,8 +15,9 @@ deb-src http://security.debian.org/ testing/updates main contrib non-free
 
 deb http://www.debian-multimedia.org testing main non-free
 
-
+##Backports
 #deb http://www.backports.org/debian lenny-backports main contrib non-free
+deb http://mozilla.debian.net/ squeeze-backports iceweasel-4.0
 
 #Experimental
 #deb ftp://mirrors.kernel.org/debian/ experimental main contrib non-free
