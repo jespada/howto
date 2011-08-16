@@ -12,5 +12,3 @@ done
 exit 0
 
 
-11:59 statistics.log.20100730
-12:01 statistics.log.20100731
